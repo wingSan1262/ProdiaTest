@@ -1,0 +1,4 @@
+package vanrrtech.app.prodiaappsample.Repository.RepositoryInteractor
+
+class DeletedThisIfYouMakeOtherPackagesHereOrFile {
+}

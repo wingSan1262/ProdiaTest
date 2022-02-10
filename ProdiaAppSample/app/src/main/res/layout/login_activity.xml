@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".features.LoginActivity"
+        android:background="@color/blue_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Please login"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:id="@+id/field_username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="?attr/text_color"
+                android:textColorHint="?attr/hint_text_color"
+                android:textSize="16sp"
+                android:background="@color/white"
+                android:hint="Username"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/field_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="?attr/text_color"
+                android:textColorHint="?attr/hint_text_color"
+                android:textSize="16sp"
+                android:background="@color/white"
+                android:hint="Password"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            />
+    </LinearLayout>
+
+</layout>
